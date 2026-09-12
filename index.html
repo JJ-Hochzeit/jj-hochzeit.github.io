@@ -98,11 +98,12 @@
     display:flex;align-items:center;justify-content:space-between;
   }
   .brand{
-    display:inline-block;text-decoration:none;line-height:1;
+    display:inline-block;text-decoration:none;line-height:1.5;
     font-family:var(--font-script-display);font-weight:700;font-size:46px;
-    background-image:var(--gold-shine);background-size:200% auto;
-    -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+    color:var(--gold-700);
+    transform:rotate(-5deg);transform-origin:left center;
   }
+  .brand .amp{font-size:.7em;color:var(--gold-600);}
   nav.links{display:flex;gap:26px;flex-wrap:wrap;}
   nav.links a{
     font-family:var(--font-label);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
@@ -212,6 +213,7 @@
 
   /* ---------- Icons ---------- */
   .icon{width:38px;height:38px;stroke:var(--gold-700);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;margin:0 auto var(--space-3);}
+  .icon.icon-lg{width:52px;height:52px;}
 
   /* ---------- Cards grid (locations / unterkuenfte) ---------- */
   .card-grid{
@@ -394,7 +396,7 @@
 
 <header class="site-nav">
   <div class="nav-inner">
-    <a href="#top" class="brand">J &amp; J</a>
+    <a href="#top" class="brand">J <span class="amp">&amp;</span> J</a>
     <nav class="links" id="navLinks">
       <a href="#brautpaar">Brautpaar</a>
       <a href="#motto">Motto</a>
@@ -475,19 +477,19 @@
     <h2 class="section-title">Wo wir feiern</h2>
     <div class="card-grid-2 aligned">
       <div class="card">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v3"/><path d="M10.5 3.5h3"/><path d="M5 21V11L12 6l7 5v10"/><path d="M9 21v-6h6v6"/></svg>
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M12 2v3"/><path d="M10.5 3.5h3"/><path d="M5 21V11L12 6l7 5v10"/><path d="M9 21v-6h6v6"/></svg>
         <div class="label">Kirchliche Trauung</div>
-        <div class="when">17.04.2027 · Treffpunkt 14:30 Uhr, Beginn der Trauung 15:00 Uhr</div>
-        <div class="addr">St. Jakob<br>Pfarrstraße 7, 85221 Dachau</div>
+        <div class="when">17.04.2027<br>Treffpunkt 14:30 Uhr<br>Beginn der Trauung 15:00 Uhr</div>
+        <div class="addr">St. Jakob<br>Augsburger Straße 2, 85221 Dachau</div>
         <div class="note">Bitte seid pünktlich zum Treffpunkt da, damit wir gemeinsam starten können.</div>
-        <a class="link" href="https://www.google.com/maps/search/?api=1&query=St.+Jakob+Pfarrstra%C3%9Fe+7+85221+Dachau" target="_blank" rel="noopener">Route planen</a>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&query=St.+Jakob+Augsburger+Stra%C3%9Fe+2+85221+Dachau" target="_blank" rel="noopener">Route planen</a>
       </div>
       <div class="card">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M2 10 12 4 22 10"/><path d="M3 10v11M8 10v11M12 10v11M16 10v11M21 10v11"/><path d="M3 21h18"/></svg>
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 21V10h2v3h2v-3h2v-4h4v4h2v3h2v-3h2v11z"/><path d="M4 21h16"/></svg>
         <div class="label">Hochzeitsfeier</div>
-        <div class="when">17.04.2027 · ab 16:00 Uhr</div>
+        <div class="when">17.04.2027<br>ab 16:00 Uhr</div>
         <div class="addr">Schloss Dachau<br>Kurfürst-Max-Emanuel-Platz 2, 85221 Dachau</div>
-        <div class="note">Sektempfang, Häppchen und Hochzeitstorte ab 16:00 Uhr</div>
+        <div class="note">Sektempfang, Häppchen und Hochzeitstorte ab ca. 16:00 Uhr</div>
         <a class="link" href="https://www.google.com/maps/search/?api=1&query=Schloss+Dachau+Kurf%C3%BCrst-Max-Emanuel-Platz+2+85221+Dachau" target="_blank" rel="noopener">Route planen</a>
       </div>
     </div>
@@ -528,7 +530,7 @@
 
       <div class="field">
         <label class="flabel" for="rsvpMessage">Nachricht (optional)</label>
-        <textarea id="rsvpMessage" name="message" placeholder="Song-Wunsch, Allergie, ein paar liebe Worte …"></textarea>
+        <textarea id="rsvpMessage" name="message"></textarea>
       </div>
 
       <div class="field">
@@ -552,19 +554,17 @@
     <h2 class="section-title">An unserer Seite</h2>
     <div class="people-with-divider">
       <div class="person">
-        <div class="avatar"><div class="ring"><img src="img/avatar-caro.jpg" alt="Carolin"></div></div>
+        <div class="avatar"><div class="ring"><img src="img/avatar-caro.jpg" alt="Carolin und Julia"></div></div>
         <div class="role">Trauzeugin</div>
         <div class="name">Carolin Weiß</div>
         <p class="bio">„Carolin ist meine Bestie, die mich auch ganz ohne Worte versteht – immer!“</p>
-        <div class="contact">Tel. 0151 5857 9100</div>
       </div>
       <div class="people-divider">&amp;</div>
       <div class="person">
-        <div class="avatar"><div class="ring"><img src="img/avatar-onno.jpg" alt="Onno"></div></div>
+        <div class="avatar"><div class="ring"><img src="img/avatar-onno.jpg" alt="Onno und Jens"></div></div>
         <div class="role">Trauzeuge</div>
         <div class="name">Onno Schüßler</div>
         <p class="bio">„Onno und ich kennen uns schon, seitdem wir kaum laufen konnten – also Freunde der ersten Stunde.“</p>
-        <div class="contact">Tel. 0151 1741 5727</div>
       </div>
     </div>
   </div>
@@ -611,24 +611,24 @@
       <div class="abc-item"><div class="letter">C</div><div><div class="term">Cocktails</div><div class="desc">Zur Party gibt's auch den ein oder anderen Cocktail</div></div></div>
       <div class="abc-item"><div class="letter">D</div><div><div class="term">Dresscode</div><div class="desc">Bitte erscheint in festlich eleganter Garderobe</div></div></div>
       <div class="abc-item"><div class="letter">E</div><div><div class="term">Ehe</div><div class="desc">Nach diesem Tag sind wir nicht mehr nur ein Paar, sondern Mann und Frau</div></div></div>
-      <div class="abc-item"><div class="letter">F</div><div><div class="term">Flitterwochen</div><div class="desc">Verbringen wir in Afrika</div></div></div>
+      <div class="abc-item"><div class="letter">F</div><div><div class="term">Flitterwochen</div><div class="desc">Verbringen wir voraussichtlich in Afrika</div></div></div>
       <div class="abc-item"><div class="letter">G</div><div><div class="term">Gästebuch</div><div class="desc">Haben wir auch. Wir freuen uns, wenn ihr euch eintragt!</div></div></div>
       <div class="abc-item"><div class="letter">H</div><div><div class="term">Häppchen</div><div class="desc">Zum Sektempfang gibt es neben Kuchen auch salzige Häppchen</div></div></div>
       <div class="abc-item"><div class="letter">I</div><div><div class="term">Ideen</div><div class="desc">Bitte stimmt euch mit unseren Trauzeugen ab</div></div></div>
       <div class="abc-item"><div class="letter">J</div><div><div class="term">JA</div><div class="desc">Ist das wichtigste Wort an diesem Tag</div></div></div>
       <div class="abc-item"><div class="letter">K</div><div><div class="term">Küsse</div><div class="desc">Wird ans Glas geklopft, gibt's ein Küsschen von uns</div></div></div>
-      <div class="abc-item"><div class="letter">L</div><div><div class="term">Liederwünsche</div><div class="desc">Könnt ihr uns im Vorfeld gerne zukommen lassen</div></div></div>
+      <div class="abc-item"><div class="letter">L</div><div><div class="term">Liebe</div><div class="desc">Der Grund, warum wir heute hier sind – und warum wir uns so freuen, diesen Tag mit euch zu teilen</div></div></div>
       <div class="abc-item"><div class="letter">M</div><div><div class="term">Menü</div><div class="desc">Bitte entscheidet euch zwischen Fleisch, Fisch und Vegetarisch</div></div></div>
       <div class="abc-item"><div class="letter">N</div><div><div class="term">Nachname</div><div class="desc">Auch als gleichberechtigtes Paar gehört ein gemeinsamer Name für uns dazu – #TheRaskops</div></div></div>
-      <div class="abc-item"><div class="letter">O</div><div><div class="term">Organisatorisches</div><div class="desc">Könnt ihr gerne mit unseren Trauzeugen besprechen</div></div></div>
-      <div class="abc-item"><div class="letter">P</div><div><div class="term">Probeessen</div><div class="desc">Wir können euch versprechen: Es wird lecker!</div></div></div>
+      <div class="abc-item"><div class="letter">O</div><div><div class="term">Offene Fragen</div><div class="desc">Meldet euch einfach direkt bei uns – wir freuen uns über jede Nachricht</div></div></div>
+      <div class="abc-item"><div class="letter">P</div><div><div class="term">Parken</div><div class="desc">Am Schloss Dachau gibt es ausreichend Parkplätze – von dort ist es auch nur ein kurzer Weg zur Kirche</div></div></div>
       <div class="abc-item"><div class="letter">Q</div><div><div class="term">Qualifiziert</div><div class="desc">Haben wir uns für die Ehe nach nun über 8 Jahren Beziehung</div></div></div>
-      <div class="abc-item"><div class="letter">R</div><div><div class="term">Reden</div><div class="desc">Dürft ihr herzlich gerne halten – am schönsten in Maßen. Sprecht Zeitpunkt und Länge einfach kurz mit unseren Trauzeugen ab</div></div></div>
-      <div class="abc-item"><div class="letter">S</div><div><div class="term">Sektempfang</div><div class="desc">Findet direkt nach der Trauung statt</div></div></div>
+      <div class="abc-item"><div class="letter">R</div><div><div class="term">Ringe</div><div class="desc">Das Zeichen für das Ja, das wir uns an diesem Tag geben</div></div></div>
+      <div class="abc-item"><div class="letter">S</div><div><div class="term">Sektempfang</div><div class="desc">Findet direkt nach der Trauung im Schloss Dachau statt</div></div></div>
       <div class="abc-item"><div class="letter">T</div><div><div class="term">Tauben</div><div class="desc">Sind schöne Tiere. Deswegen wollen wir sie keinem zusätzlichen Stress aussetzen</div></div></div>
       <div class="abc-item"><div class="letter">U</div><div><div class="term">Unser Sparschwein</div><div class="desc">Freut sich über eine kleine Spende</div></div></div>
       <div class="abc-item"><div class="letter">V</div><div><div class="term">Versprechen</div><div class="desc">Das schönste Versprechen, das wir uns geben, ist füreinander da zu sein – für immer</div></div></div>
-      <div class="abc-item"><div class="letter">W</div><div><div class="term">Wedding Bubbles</div><div class="desc">Wir freuen uns darauf, wenn ihr uns nach der Trauung mit Seifenblasen empfangt</div></div></div>
+      <div class="abc-item"><div class="letter">W</div><div><div class="term">Wetter</div><div class="desc">Bei Sonne wie bei Regen – wir feiern in jedem Fall ausgelassen!</div></div></div>
       <div class="abc-item"><div class="letter">X</div><div><div class="term">X-Beine</div><div class="desc">Sind keine Ausrede, getanzt wird trotzdem!</div></div></div>
       <div class="abc-item"><div class="letter">Y</div><div><div class="term">Yes-Moment</div><div class="desc">Der Moment, in dem wir uns das Jawort geben – für uns der Höhepunkt des Tages</div></div></div>
       <div class="abc-item"><div class="letter">Z</div><div><div class="term">Zum Schluss</div><div class="desc">Vielen Dank für eure Unterstützung und dass ihr diesen besonderen Tag mit uns verbringen werdet</div></div></div>
@@ -641,11 +641,11 @@
     <div class="eyebrow">Fotogalerie</div>
     <h2 class="section-title">Bilder vom Tag</h2>
     <div class="photo-collage" id="photoCollage">
-      <div class="collage-photo cp1"><img src="img/gallery-standesamt.jpg" alt="Standesamtliche Trauung"></div>
+      <div class="collage-photo cp1"><img src="img/gallery-standesamt.jpg" alt="Vor dem Alten Rathaus"></div>
       <div class="collage-photo cp2"><img src="img/gallery-ja.jpg" alt="Das Ja-Wort"></div>
-      <div class="collage-photo cp3"><img src="img/gallery-bubbles.jpg" alt="Seifenblasen vor dem Standesamt"></div>
-      <div class="collage-photo cp4"><img src="img/gallery-gala.jpg" alt="Gala-Abend am Pool"></div>
-      <div class="collage-photo cp5"><img src="img/gallery-julia.jpg" alt="Julia beim Gala-Abend"></div>
+      <div class="collage-photo cp3"><img src="img/gallery-toast.jpg" alt="Anstoßen"></div>
+      <div class="collage-photo cp4"><img src="img/gallery-bubbles.jpg" alt="Seifenblasen vor dem Standesamt"></div>
+      <div class="collage-photo cp5"><img src="img/gallery-walking.jpg" alt="Julia und Jens auf dem Weg zur Kirche"></div>
       <div class="collage-photo cp6"><img src="img/gallery-rings.jpg" alt="Die Ringe"></div>
     </div>
   </div>
