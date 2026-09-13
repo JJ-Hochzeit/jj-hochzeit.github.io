@@ -101,7 +101,6 @@
     display:inline-block;text-decoration:none;line-height:1.5;
     font-family:var(--font-script-display);font-weight:700;font-size:46px;
     color:var(--gold-700);
-    transform:rotate(-5deg);transform-origin:left center;
   }
   .brand .amp{font-size:.7em;color:var(--gold-600);}
   nav.links{display:flex;gap:26px;flex-wrap:wrap;}
@@ -136,6 +135,7 @@
   }
   .hero .intro{
     font-style:italic;font-size:20px;margin-top:var(--space-5);color:var(--gold-900);
+    text-wrap:balance;
   }
   .hero .scroll-cue{
     margin-top:var(--space-6);font-family:var(--font-label);font-size:11px;letter-spacing:.2em;
@@ -166,7 +166,7 @@
     font-family:var(--font-label);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-600);
     margin-bottom:var(--space-3);
   }
-  .person .bio{font-style:italic;font-size:17px;margin:0 0 var(--space-3);}
+  .person .bio{font-style:italic;font-size:17px;margin:0 0 var(--space-3);text-wrap:balance;}
   .person .contact{font-size:15px;color:var(--gold-700);}
   .people-divider{
     display:flex;align-items:center;justify-content:center;
@@ -188,6 +188,7 @@
   .quote-block{max-width:680px;margin:0 auto;text-align:center;}
   .quote-block p{
     font-style:italic;font-size:26px;line-height:1.55;color:var(--gold-900);margin:0;
+    text-wrap:balance;
   }
   .quote-block .attribution{
     margin-top:var(--space-4);font-family:var(--font-label);font-size:12px;letter-spacing:.18em;
@@ -208,7 +209,7 @@
     font-family:var(--font-label);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-600);
     margin-top:8px;
   }
-  .countdown-note{text-align:center;font-style:italic;margin-top:var(--space-5);font-size:17px;}
+  .countdown-note{text-align:center;font-style:italic;margin-top:var(--space-5);font-size:17px;text-wrap:balance;}
   .countdown-passed{display:none;text-align:center;font-style:italic;font-size:20px;max-width:520px;margin:0 auto;}
 
   /* ---------- Icons ---------- */
@@ -231,12 +232,12 @@
   .card .label{font-family:var(--font-label);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-900);margin-bottom:6px;}
   .card .when{font-family:var(--font-label);font-size:14px;letter-spacing:.05em;color:var(--gold-700);margin-bottom:var(--space-3);}
   .card .addr{font-size:16.5px;margin-bottom:var(--space-3);}
-  .card .note{font-style:italic;font-size:15px;color:var(--gold-700);}
+  .card .note{font-style:italic;font-size:15px;color:var(--gold-700);text-wrap:balance;}
   .card .link{display:inline-block;margin-top:var(--space-3);font-family:var(--font-label);font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--gold-700);color:var(--gold-700);}
 
   /* ---------- RSVP ---------- */
   .rsvp-wrap{max-width:640px;margin:0 auto;}
-  .rsvp-deadline{text-align:center;font-style:italic;margin-bottom:var(--space-6);}
+  .rsvp-deadline{text-align:center;font-style:italic;margin-bottom:var(--space-6);text-wrap:balance;}
   .field{margin-bottom:var(--space-5);}
   .field > label.flabel{
     display:block;font-family:var(--font-label);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
@@ -273,7 +274,6 @@
     transition:background .2s,color .2s;
   }
   .add-guest-btn:hover{background:var(--gold-700);color:var(--white);}
-  .privacy{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;}
   .submit-btn{
     display:block;margin:0 auto;font-family:var(--font-label);font-size:13px;letter-spacing:.16em;text-transform:uppercase;
     background:var(--gold-700);color:var(--white);border:none;padding:14px 40px;cursor:pointer;transition:background .2s;
@@ -294,7 +294,7 @@
   .t-item:last-child .stem{display:none;}
   .t-item .time{font-family:var(--font-label);font-size:13px;letter-spacing:.04em;color:var(--gold-900);text-align:right;padding-top:2px;}
   .t-item .title{font-family:var(--font-label);font-size:14.5px;letter-spacing:.03em;color:var(--gold-900);margin-bottom:2px;}
-  .t-item .desc{font-style:italic;font-size:16px;color:var(--gold-700);}
+  .t-item .desc{font-style:italic;font-size:16px;color:var(--gold-700);text-wrap:balance;}
 
   /* ---------- ABC ---------- */
   .abc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);}
@@ -306,7 +306,7 @@
     -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
   }
   .abc-item .term{font-family:var(--font-label);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px;}
-  .abc-item .desc{font-size:15.5px;line-height:1.5;}
+  .abc-item .desc{font-size:15.5px;line-height:1.5;text-wrap:balance;}
 
   /* ---------- Photo collage ---------- */
   .photo-collage{position:relative;max-width:920px;margin:0 auto;height:660px;}
@@ -340,15 +340,12 @@
     background-image:var(--gold-shine);background-size:200% auto;
     -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
   }
-  .closing p{font-style:italic;font-size:22px;max-width:560px;margin:0 auto;}
+  .closing p{font-style:italic;font-size:22px;max-width:560px;margin:0 auto;text-wrap:balance;}
 
   /* ---------- Footer ---------- */
   footer.site-footer{
     text-align:center;padding:var(--space-6) var(--space-5);border-top:1px solid var(--hairline);
   }
-  footer.site-footer .flinks{font-family:var(--font-label);font-size:11px;letter-spacing:.14em;text-transform:uppercase;}
-  footer.site-footer .flinks a{text-decoration:none;margin:0 10px;color:var(--gold-700);}
-  footer.site-footer .flinks a:hover{text-decoration:underline;}
 
   /* ================= RESPONSIVE ================= */
   @media (max-width:880px){
@@ -485,7 +482,7 @@
         <a class="link" href="https://www.google.com/maps/search/?api=1&query=St.+Jakob+Augsburger+Stra%C3%9Fe+2+85221+Dachau" target="_blank" rel="noopener">Route planen</a>
       </div>
       <div class="card">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M4 21V10h2v3h2v-3h2v-4h4v4h2v3h2v-3h2v11z"/><path d="M4 21h16"/></svg>
+        <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M4 21V12h2v-2h1.5v2h1v-4h1.5v4h1v-2h2v2h1v-4h1.5v4h1v-2h2v2h1.5v-2h2V21z"/><path d="M4 21h16"/></svg>
         <div class="label">Hochzeitsfeier</div>
         <div class="when">17.04.2027<br>ab 16:00 Uhr</div>
         <div class="addr">Schloss Dachau<br>Kurfürst-Max-Emanuel-Platz 2, 85221 Dachau</div>
@@ -500,7 +497,7 @@
   <div class="wrap rsvp-wrap">
     <div class="eyebrow">Antworten</div>
     <h2 class="section-title">Rückmeldung</h2>
-    <p class="rsvp-deadline">Bitte gebt uns bis zum 15. Dezember 2026 Bescheid, ob ihr mit uns feiert.</p>
+    <p class="rsvp-deadline">Bitte gebt uns bis zum 15. Dezember 2026 Bescheid, ob Ihr mit uns feiert.</p>
 
     <form id="rsvpForm">
       <div class="field">
@@ -512,13 +509,14 @@
       </div>
 
       <div class="field" id="guestSection">
-        <label class="flabel">Wer kommt mit und was möchtet ihr essen?</label>
+        <label class="flabel">Wer kommt mit und was möchtet Ihr essen?</label>
         <div id="guestList">
           <div class="guest-row">
             <input type="text" class="guest-name" placeholder="Vor- und Nachname" required>
             <select class="guest-menu">
               <option value="fleisch">Fleisch</option>
               <option value="fisch">Fisch</option>
+              <option value="fleisch-fisch">Fleisch und Fisch</option>
               <option value="vegetarisch">Vegetarisch</option>
               <option value="vegan">Vegan</option>
             </select>
@@ -531,13 +529,6 @@
       <div class="field">
         <label class="flabel" for="rsvpMessage">Nachricht (optional)</label>
         <textarea id="rsvpMessage" name="message"></textarea>
-      </div>
-
-      <div class="field">
-        <label class="privacy">
-          <input type="checkbox" required style="margin-top:4px;">
-          <span>Beim Absenden der Anmeldung bin ich einverstanden, dass meine Angaben zur Planung der Feier gespeichert werden.</span>
-        </label>
       </div>
 
       <button type="submit" class="submit-btn" id="rsvpSubmitBtn">Absenden</button>
@@ -558,13 +549,15 @@
         <div class="role">Trauzeugin</div>
         <div class="name">Carolin Weiß</div>
         <p class="bio">„Carolin ist meine Bestie, die mich auch ganz ohne Worte versteht – immer!“</p>
+        <div class="contact">Tel. 0151 5857 9100</div>
       </div>
       <div class="people-divider">&amp;</div>
       <div class="person">
         <div class="avatar"><div class="ring"><img src="img/avatar-onno.jpg" alt="Onno und Jens"></div></div>
         <div class="role">Trauzeuge</div>
-        <div class="name">Onno Schüßler</div>
+        <div class="name">Onno Schüssler</div>
         <p class="bio">„Onno und ich kennen uns schon, seitdem wir kaum laufen konnten – also Freunde der ersten Stunde.“</p>
+        <div class="contact">Tel. 0151 1741 5727</div>
       </div>
     </div>
   </div>
@@ -589,7 +582,7 @@
 <section id="unterkuenfte">
   <div class="wrap">
     <div class="eyebrow">Unterkünfte</div>
-    <h2 class="section-title">Wo ihr schlafen könnt</h2>
+    <h2 class="section-title">Wo Ihr schlafen könnt</h2>
     <div class="card-grid-2" style="grid-template-columns:1fr;max-width:360px;">
       <div class="card">
         <div class="label">Hotel DAH-Inn</div>
@@ -609,18 +602,18 @@
       <div class="abc-item"><div class="letter">A</div><div><div class="term">Adults Only</div><div class="desc">Wir bitten liebevoll um Verständnis, dass wir im Kreise der Erwachsenen feiern möchten</div></div></div>
       <div class="abc-item"><div class="letter">B</div><div><div class="term">Buffet</div><div class="desc">Buffet finden wir ungemütlich, daher gibt es bei uns ein Menü</div></div></div>
       <div class="abc-item"><div class="letter">C</div><div><div class="term">Cocktails</div><div class="desc">Zur Party gibt's auch den ein oder anderen Cocktail</div></div></div>
-      <div class="abc-item"><div class="letter">D</div><div><div class="term">Dresscode</div><div class="desc">Bitte erscheint in festlich eleganter Garderobe</div></div></div>
-      <div class="abc-item"><div class="letter">E</div><div><div class="term">Ehe</div><div class="desc">Nach diesem Tag sind wir nicht mehr nur ein Paar, sondern Mann und Frau</div></div></div>
+      <div class="abc-item"><div class="letter">D</div><div><div class="term">Dresscode</div><div class="desc">Festlich-elegant: Anzug oder Kleid sind perfekt – ein Smoking bzw. Black Tie ist nicht nötig</div></div></div>
+      <div class="abc-item"><div class="letter">E</div><div><div class="term">Ehe</div><div class="desc">Auf dem Papier sind wir schon verheiratet – heute geht es um unser Ja-Wort vor der Kirche und vor Euch</div></div></div>
       <div class="abc-item"><div class="letter">F</div><div><div class="term">Flitterwochen</div><div class="desc">Verbringen wir voraussichtlich in Afrika</div></div></div>
-      <div class="abc-item"><div class="letter">G</div><div><div class="term">Gästebuch</div><div class="desc">Haben wir auch. Wir freuen uns, wenn ihr euch eintragt!</div></div></div>
+      <div class="abc-item"><div class="letter">G</div><div><div class="term">Gästebuch</div><div class="desc">Haben wir auch. Wir freuen uns, wenn Ihr Euch eintragt!</div></div></div>
       <div class="abc-item"><div class="letter">H</div><div><div class="term">Häppchen</div><div class="desc">Zum Sektempfang gibt es neben Kuchen auch salzige Häppchen</div></div></div>
-      <div class="abc-item"><div class="letter">I</div><div><div class="term">Ideen</div><div class="desc">Bitte stimmt euch mit unseren Trauzeugen ab</div></div></div>
+      <div class="abc-item"><div class="letter">I</div><div><div class="term">Ideen</div><div class="desc">Bitte stimmt Euch mit unseren Trauzeugen ab</div></div></div>
       <div class="abc-item"><div class="letter">J</div><div><div class="term">JA</div><div class="desc">Ist das wichtigste Wort an diesem Tag</div></div></div>
       <div class="abc-item"><div class="letter">K</div><div><div class="term">Küsse</div><div class="desc">Wird ans Glas geklopft, gibt's ein Küsschen von uns</div></div></div>
-      <div class="abc-item"><div class="letter">L</div><div><div class="term">Liebe</div><div class="desc">Der Grund, warum wir heute hier sind – und warum wir uns so freuen, diesen Tag mit euch zu teilen</div></div></div>
-      <div class="abc-item"><div class="letter">M</div><div><div class="term">Menü</div><div class="desc">Bitte entscheidet euch zwischen Fleisch, Fisch und Vegetarisch</div></div></div>
+      <div class="abc-item"><div class="letter">L</div><div><div class="term">Liebe</div><div class="desc">Der Grund, warum wir heute hier sind – und warum wir uns so freuen, diesen Tag mit Euch zu teilen</div></div></div>
+      <div class="abc-item"><div class="letter">M</div><div><div class="term">Menü</div><div class="desc">Bitte entscheidet Euch zwischen Fleisch, Fisch, Vegetarisch und Vegan</div></div></div>
       <div class="abc-item"><div class="letter">N</div><div><div class="term">Nachname</div><div class="desc">Auch als gleichberechtigtes Paar gehört ein gemeinsamer Name für uns dazu – #TheRaskops</div></div></div>
-      <div class="abc-item"><div class="letter">O</div><div><div class="term">Offene Fragen</div><div class="desc">Meldet euch einfach direkt bei uns – wir freuen uns über jede Nachricht</div></div></div>
+      <div class="abc-item"><div class="letter">O</div><div><div class="term">Offene Fragen</div><div class="desc">Meldet Euch einfach direkt bei uns – wir freuen uns über jede Nachricht</div></div></div>
       <div class="abc-item"><div class="letter">P</div><div><div class="term">Parken</div><div class="desc">Am Schloss Dachau gibt es ausreichend Parkplätze – von dort ist es auch nur ein kurzer Weg zur Kirche</div></div></div>
       <div class="abc-item"><div class="letter">Q</div><div><div class="term">Qualifiziert</div><div class="desc">Haben wir uns für die Ehe nach nun über 8 Jahren Beziehung</div></div></div>
       <div class="abc-item"><div class="letter">R</div><div><div class="term">Ringe</div><div class="desc">Das Zeichen für das Ja, das wir uns an diesem Tag geben</div></div></div>
@@ -631,7 +624,7 @@
       <div class="abc-item"><div class="letter">W</div><div><div class="term">Wetter</div><div class="desc">Bei Sonne wie bei Regen – wir feiern in jedem Fall ausgelassen!</div></div></div>
       <div class="abc-item"><div class="letter">X</div><div><div class="term">X-Beine</div><div class="desc">Sind keine Ausrede, getanzt wird trotzdem!</div></div></div>
       <div class="abc-item"><div class="letter">Y</div><div><div class="term">Yes-Moment</div><div class="desc">Der Moment, in dem wir uns das Jawort geben – für uns der Höhepunkt des Tages</div></div></div>
-      <div class="abc-item"><div class="letter">Z</div><div><div class="term">Zum Schluss</div><div class="desc">Vielen Dank für eure Unterstützung und dass ihr diesen besonderen Tag mit uns verbringen werdet</div></div></div>
+      <div class="abc-item"><div class="letter">Z</div><div><div class="term">Zum Schluss</div><div class="desc">Vielen Dank für Eure Unterstützung und dass Ihr diesen besonderen Tag mit uns verbringen werdet</div></div></div>
     </div>
   </div>
 </section>
@@ -653,14 +646,10 @@
 
 <div class="closing">
   <div class="m">J &amp; J</div>
-  <p>Wir freuen uns sehr, wenn ihr diesen besonderen Tag mit uns teilt und ihn unvergesslich macht.</p>
+  <p>Wir freuen uns sehr, wenn Ihr diesen besonderen Tag mit uns teilt und ihn unvergesslich macht.</p>
 </div>
 
 <footer class="site-footer">
-  <div class="flinks">
-    <a href="#">Impressum</a>
-    <a href="#">Datenschutz</a>
-  </div>
 </footer>
 
 <script>
@@ -744,6 +733,7 @@
       '<select class="guest-menu">' +
         '<option value="fleisch">Fleisch</option>' +
         '<option value="fisch">Fisch</option>' +
+        '<option value="fleisch-fisch">Fleisch und Fisch</option>' +
         '<option value="vegetarisch">Vegetarisch</option>' +
         '<option value="vegan">Vegan</option>' +
       '</select>' +
